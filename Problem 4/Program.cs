@@ -1,28 +1,20 @@
-﻿using System;
+using System;
 
-namespace Character_Stats
+public class Test
 {
-    public class Class1
-    {
-        public static void Main(string[] args)
-        {
-			//character name
-            var name = Console.ReadLine();
-			//character current health
-            var health = int.Parse(Console.ReadLine());
-			//character max name
-            var MaxHealth = int.Parse(Console.ReadLine());
-			//character current energy
-            var energy = int.Parse(Console.ReadLine());
-			//character max energy
-            var MaxEnergy = int.Parse(Console.ReadLine());
-			//current health/energy strings - add '|' equal to health, max health, energy, max energy
-            string currentHealth = "|" + new string('|', health) + new string('.', MaxHealth - health) + "|";
-            string currentEnergy = "|" + new string('|', energy) + new string('.', MaxEnergy - energy) + "|";
-			//print strings
-            Console.WriteLine($"Name: {name}");
-            Console.WriteLine($"Health: {currentHealth}");
-            Console.WriteLine($"Energy: {currentEnergy}");
-        }
-    }
+	public static void Main()
+	{
+		//beverage name
+		string name=Console.ReadLine();
+		//beverage volume
+		int volume=int.Parse(Console.ReadLine());
+		//beverage energy
+		int energy=int.Parse(Console.ReadLine());
+		//beverage sugar
+		int sugar=int.Parse(Console.ReadLine());
+		//print volume and name
+		Console.WriteLine($"{volume}ml {name}:");
+		//print energy and sugar based on volume
+		Console.WriteLine($"{((double)volume/100)*energy}kcal, {((double)volume/100)*sugar}g sugars");
+	}
 }
