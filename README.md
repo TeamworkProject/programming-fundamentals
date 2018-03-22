@@ -18,7 +18,7 @@ Write a program, which reads a food product
 for the **given volume** and print them
 on the console in the following format:
 
-·       
+·      
 Name – as per the input
 
 ·       
