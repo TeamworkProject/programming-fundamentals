@@ -5,16 +5,16 @@ public class Test
 	public static void Main()
 	{
 		//beverage name
-		string name=Console.ReadLine();
+		string beverageName=Console.ReadLine();
 		//beverage volume
-		int volume=int.Parse(Console.ReadLine());
+		int beverageVolume=int.Parse(Console.ReadLine());
 		//beverage energy
-		int energy=int.Parse(Console.ReadLine());
+		int beverageEnergy=int.Parse(Console.ReadLine());
 		//beverage sugar
-		int sugar=int.Parse(Console.ReadLine());
+		int beverageSugar=int.Parse(Console.ReadLine());
 		//print volume and name
-		Console.WriteLine($"{volume}ml {name}:");
+		Console.WriteLine($"{beverageVolume}ml {beverageName}:");
 		//print energy and sugar based on volume
-		Console.WriteLine($"{((double)volume/100)*energy}kcal, {((double)volume/100)*sugar}g sugars");
+		Console.WriteLine($"{((double)beversgeVolume/100)*beversgeEnergy}kcal, {((double)beverageVolume/100)*beversgeSugar}g sugars");
 	}
 }
