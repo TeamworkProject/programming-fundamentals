@@ -15,6 +15,6 @@ public class Test
 		//print volume and name
 		Console.WriteLine($"{beverageVolume}ml {beverageName}:");
 		//print energy and sugar based on volume
-		Console.WriteLine($"{((double)beversgeVolume/100)*beversgeEnergy}kcal, {((double)beverageVolume/100)*beversgeSugar}g sugars");
+		Console.WriteLine($"{((double)beverageVolume/100)*beverageEnergy}kcal, {((double)beverageVolume/100)*beverageSugar}g sugars");
 	}
 }
