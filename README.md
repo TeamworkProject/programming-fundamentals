@@ -21,7 +21,7 @@ on the console in the following format:
 ·      
 Name – as per the input
 
-·       
+·      
 Volume – **integer**, **suffixed** by “**ml**” (e.g. “**220ml**”)
 
 ·       
